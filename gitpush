@@ -1,0 +1,5 @@
+git add .
+echo -n "Enter commit > "
+read com
+git commit -m "$com"
+git push
