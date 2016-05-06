@@ -1,0 +1,106 @@
+#carousel-example-generic.carousel.slide.margin-top-slide{"data-ride" => "carousel"}
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+    %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+    %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+  .carousel-inner{:role => "listbox"}
+    .item.active
+      %img{:alt => "MFC", :src => "http://www.fullingmill.com/c.3752701/FM-US/images/home/Home_main_I_US_opt.jpg"}/
+      .carousel-caption
+    .item
+      %img{:alt => "MFC", :src => "http://www.fullingmill.com/c.3752701/FM-US/images/home/Home_main_II_US_opt.jpg"}/
+      .carousel-caption
+    .item
+      %img{:alt => "MFC", :src => "http://www.fullingmill.com/c.3752701/FM-US/images/home/Home_main_III_US_opt.jpg"}/
+      .carousel-caption
+  %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+    %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+    %span.sr-only Previous
+  %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+    %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
+    %span.sr-only Next
+
+.container
+  %ul.nav.nav-tabs{:role => "tablist"}
+    %li.active{:role => "presentation"}
+      %a{"aria-controls" => "home", "data-toggle" => "tab", :href => "#home", :role => "tab"} Home
+    %li{:role => "presentation"}
+      %a{"aria-controls" => "profile", "data-toggle" => "tab", :href => "#profile", :role => "tab"} Profile
+    %li{:role => "presentation"}
+      %a{"aria-controls" => "messages", "data-toggle" => "tab", :href => "#messages", :role => "tab"} Messages
+    %li{:role => "presentation"}
+      %a{"aria-controls" => "settings", "data-toggle" => "tab", :href => "#settings", :role => "tab"} Settings
+  .tab-content
+    #home.tab-pane.active{:role => "tabpanel"}
+      .col-sm-6
+        %h1 FULLING MILL QUALITY
+        %p Every feather hand-picked, every hackle hand-selected and every fly handmade. Quality is at the heart of everything we do at Fulling Mill. Each and every fly is expertly tied by one of our highly skilled tyers before completing a rigorous three phase quality control process. This gives us the confidence to offer our famous Fulling Mill 200% guarantee: if a fly isn’t up to the highest standards we expect for you, we will replace it with two that are. No ‘Ifs’, ‘Ands’ or ‘Buts’, we are that confident on our quality! Please enjoy browsing our assortment.
+      .col-sm-6
+        = image_tag("MFC Logo.jpg")
+    #profile.tab-pane.fade{:role => "tabpanel"}
+      .col-sm-6
+        %h1 THE WORLD'S MOST EXPERIENCED MANUFACTURER OF QUALITY FISHING FLIES
+        %p In today’s frenetic and instantaneous world Fulling Mill remains steadfastly dedicated to providing you with the highest possible level of service: we are proud to be old-fashioned in this respect! Unlike many other fly tying companies we keep a huge stock of flies at both our warehouses in the UK and US: because of this we are able to fill the vast majority of our orders almost immediately - and make sure your flies reach you promptly wherever you are. Try us out: browse our assortment for what you want and place an order with us today..
+      .col-sm-6
+        = image_tag("MFC Logo.jpg")
+    #messages.tab-pane.fade{:role => "tabpanel"}
+      .col-sm-6
+        %h1 HOOKS
+        %p It’s not just fishing flies that we offer. Countless hours on the riverbank have given us a great insight into everything that you need in your tackle bag. Fly boxes, Leaders, Fluorocarbon, Nippers, Strike Indicators: the list is endless. Our range of terminal tackle is world class designed for Fishermen by Fishermen (and don’t think we are forgetting Fisherwomen here!) Since we’ve been tying flies for a while we also know a thing or two about Hooks and Fly Tying Materials. Our guiding principles remain the same whatever the product: top quality, great value. Make sure you check out all that we have to offer.
+      .col-sm-6
+        = image_tag("MFC Logo.jpg")
+    #settings.tab-pane.fade{:role => "tabpanel"}
+      .col-sm-6
+        %h1 THE WORLD'S MOST EXPERIENCED MANUFACTURER OF QUALITY FISHING FLIES
+        %p In today’s frenetic and instantaneous world Fulling Mill remains steadfastly dedicated to providing you with the highest possible level of service: we are proud to be old-fashioned in this respect! Unlike many other fly tying companies we keep a huge stock of flies at both our warehouses in the UK and US: because of this we are able to fill the vast majority of our orders almost immediately - and make sure your flies reach you promptly wherever you are. Try us out: browse our assortment for what you want and place an order with us today..
+      .col-sm-6
+        = image_tag("MFC Logo.jpg")
+
+.container
+  .row
+    .col-sm-3
+      %a.thumbnail.no-underline{:href => "#"}
+        %img{:src => "http://www.fullingmill.com/FM-US/images/325x200_Best_Sellers.jpg", :alt => ""}/
+        .caption.text-center
+          %h4 BEST SELLERS
+    .col-sm-6
+      %a.thumbnail.no-underline{:href => "#"}
+        %img{:src => "http://www.fullingmill.com/FM-US/images/677x200_New_Products.jpg", :alt => ""}/
+        .caption.text-center
+          %h4 NEW PRODUCTS
+    .col-sm-3
+      %a.thumbnail.no-underline{:href => "#"}
+        %img{:src => "http://www.fullingmill.com/FM-US/images/325x200_Fly_Tying_Hooks.jpg", :alt => ""}/
+        .caption.text-center
+          %h4 FLY TYPING HOOKS
+
+.footer
+  .container
+    .col-sm-3
+      %h4= link_to "Support", "#"
+      %ul.list-unstyled
+        %li= link_to "Delivery", "#"
+        %li= link_to "Sale Advice", "#"
+        %li= link_to "Downloads", "#"
+        %li= link_to "FAQs", "#"
+        %li= link_to "Term & Conditions", "#"
+        %li= link_to "Privacy & Cookie Policy", "#"
+    .col-sm-3
+      %h4= link_to "About MFC", "#"
+      %ul.list-unstyled
+        %li= link_to "Delivery", "#"
+        %li= link_to "Sale Advice", "#"
+        %li= link_to "Downloads", "#"
+        %li= link_to "FAQs", "#"
+        %li= link_to "Term & Conditions", "#"
+        %li= link_to "Privacy & Cookie Policy", "#"
+    .col-sm-3
+      %h4= link_to "Register with MFC", "#"
+      %ul.list-unstyled
+        %li= link_to "Delivery", "#"
+        %li= link_to "Sale Advice", "#"
+        %li= link_to "Downloads", "#"
+        %li= link_to "FAQs", "#"
+        %li= link_to "Term & Conditions", "#"
+        %li= link_to "Privacy & Cookie Policy", "#"
+    .col-sm-3

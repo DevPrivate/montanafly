@@ -1,0 +1,35 @@
+.container
+  .row
+    .col-sm-5
+      = image_tag("MFC Logo.jpg", size: "100x100")
+    .col-sm-3.col-sm-offset-4.row-main
+      %form.form-inline
+        .form-group
+          %label.sr-only{:for => "Search"} Search
+        .input-group.has-feedback
+          %input.form-control{:type => "Search", :placeholder => "Search"}/
+%nav.navbar.navbar-inverse
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse.left-padding
+      %ul.nav.navbar-nav
+        %li= link_to "SHOP ACCESSORIES", "#"
+        %li.dropdown
+          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            ABOUT US
+            %span.caret
+          %ul.dropdown-menu
+            %li= link_to "Link", "#"
+            %li= link_to "Link", "#"
+            %li= link_to "Link", "#"
+        %li= link_to "BUY MFC SWAG", "#"
+        %li= link_to "FLY DESIGNERS", "#"
+        %li= link_to "ARTISTS", "#"
+        %li= link_to "BLOG", "#"
+        %li= link_to "RETAILER LOCATION", "#"
+        %li= link_to "CONTACT US", "#"
