@@ -1,7 +1,7 @@
 .container
   .row
     .col-sm-5
-      = image_tag("MFC Logo.jpg", size: "100x100")
+      = link_to image_tag("MFC Logo.jpg", size: "100x100"), root_path, class: "img-responsive"
     .col-sm-3.col-sm-offset-4.row-main
       %form.form-inline
         .form-group
@@ -9,27 +9,73 @@
         .input-group.has-feedback
           %input.form-control{:type => "Search", :placeholder => "Search"}/
 %nav.navbar.navbar-inverse
-  .container-fluid
+  .container
     .navbar-header
-      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+      %button.navbar-toggle{"data-target" => ".js-navbar-collapse", "data-toggle" => "collapse", :type => "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse.left-padding
+    .collapse.navbar-collapse.js-navbar-collapse
       %ul.nav.navbar-nav
-        %li= link_to "SHOP ACCESSORIES", "#"
-        %li.dropdown
-          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-            ABOUT US
+        %li= link_to "SHOP ACCESSORIES", "http://montanafly.shptron.com"
+        %li.dropdown.mega-dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            Product
             %span.caret
-          %ul.dropdown-menu
-            %li= link_to "Link", "#"
-            %li= link_to "Link", "#"
-            %li= link_to "Link", "#"
+          %ul.dropdown-menu.mega-dropdown-menu
+            %li.col-sm-3
+              %ul
+                %li.dropdown-header.banner New Product
+                %figure.text-center
+                  %img{:alt => "", :src => "http://www.fullingmill.com/c.3752701/FM-US/images/fly_new_placeholder.jpg"}
+                    %figcaption
+                      %div New Flies
+                      .banner See the Full Range
+            %li.col-sm-3
+              %ul
+                %li.dropdown-header Features
+                %li
+                  %a{:href => "#"} Auto Carousel
+                %li
+                  %a{:href => "#"} Carousel Control
+                %li
+                  %a{:href => "#"} Left & Right Navigation
+                %li
+                  %a{:href => "#"} Four Columns Grid
+                %li.divider
+                %li.dropdown-header Fonts
+                %li
+                  %a{:href => "#"} Glyphicon
+                %li
+                  %a{:href => "#"} Google Fonts
+            %li.col-sm-3
+              %ul
+                %li.dropdown-header Plus
+                %li
+                  %a{:href => "#"} Navbar Inverse
+                %li
+                  %a{:href => "#"} Pull Right Elements
+                %li
+                  %a{:href => "#"} Coloured Headers
+                %li
+                  %a{:href => "#"} Primary Buttons & Default
+            %li.col-sm-3
+              %ul
+                %li.dropdown-header Much more
+                %li
+                  %a{:href => "#"} Easy to Customize
+                %li
+                  %a{:href => "#"} Calls to action
+                %li
+                  %a{:href => "#"} Custom Fonts
+                %li
+                  %a{:href => "#"} Slide down on Hover
+        %li= link_to "ABOUT US", "#"
         %li= link_to "BUY MFC SWAG", "#"
-        %li= link_to "FLY DESIGNERS", "#"
+        %li= link_to "FLY DESIGNERS", designers_path
         %li= link_to "ARTISTS", "#"
         %li= link_to "BLOG", "#"
         %li= link_to "RETAILER LOCATION", "#"
         %li= link_to "CONTACT US", "#"
+

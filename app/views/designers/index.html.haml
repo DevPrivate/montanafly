@@ -1,0 +1,15 @@
+.container
+  .row
+    .col-sm-8
+      %p.text-justify
+        The Team at Montana Fly Company strives to be the best in the industry. Since the founding of the company in 1998 we have made many break-throughs in fly patterns and materials, and will continue to do so year after year. With an extremely large production capacity, and the best quality control in the industry, you can rest assured that every pattern you order from MFC will be of extremely high quality and will be delivered on time. We guarantee it....
+      - @designers.each do |designer|
+        - name = designer.firstname + " " + designer.lastname
+        .col-sm-3
+          .thumbnail
+            = link_to designer_path(designer) do
+              = image_tag designer.image.url
+              .caption.text-center
+                %h6= name
+    .col-sm-4
+      facebook
