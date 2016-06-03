@@ -1,0 +1,16 @@
+%p#notice= notice
+.container
+  .row
+    .col-sm-8
+      .text-center
+        = image_tag @artist.image.url, size: "500x350"
+      %p.text-justify
+        %strong= @artist.firstname + " " + @artist.lastname
+        = @artist.description
+      = link_to 'Edit', edit_artist_path(@artist)
+      \|
+      = link_to 'Back', artists_path
+    .col-sm-4
+      facebook
+
+
